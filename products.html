@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Products | Divinecode Technology - Web Creations</title>
+    <meta name="description"
+        content="Explore Divinecode's portfolio of web products - platforms built and owned by us. Discover Skillfolio and upcoming web innovations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="Divinecodetechnology.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <span class="logo__text">Divinecode</span>
+                    <span class="logo__tagline">Technology</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+                        <li><a href="products.html" class="nav__link nav__link--active">Products</a></li>
+                        <li><a href="about.html" class="nav__link">About</a></li>
+                        <li><a href="contact.html" class="nav__link btn btn--primary"
+                                style="padding: 0.5rem 1.2rem;">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav__list">
+            <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+            <li><a href="products.html" class="mobile-nav__link mobile-nav__link--active">Products</a></li>
+            <li><a href="about.html" class="mobile-nav__link">About</a></li>
+            <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem;">
+            <a href="contact.html" class="btn btn--primary mobile-nav__btn"
+                style="width: 100%; justify-content: center;">Get in Touch →</a>
+        </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <main>
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="container">
+                <div class="page-hero__content fade">
+                    <div class="page-hero__badge">Our Digital Universe</div>
+                    <h1 id="page-hero-heading" class="page-hero__title">Web Products Built by Us</h1>
+                    <p class="page-hero__description">Every platform you see is conceptualized, engineered, and owned by
+                        Divinecode. We craft experiences that empower users and solve real problems.</p>
+                    <div class="page-hero__stats">
+                        <div class="stat-badge">
+                            <span class="stat-badge__number">100%</span>
+                            <span class="stat-badge__label">In-House Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section" id="web-products" aria-labelledby="live-products-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label section-header__label--success">Currently Live</span>
+                    <h2 id="live-products-heading" class="section-header__title">Featured Web Platform</h2>
+                    <p class="section-header__subtitle">Our flagship product actively serving users worldwide</p>
+                </div>
+                <div class="products-grid fade">
+                    <article class="product-card product-card--featured tilt">
+                        <div class="product-card__badge">
+                            <span class="product-card__badge-text">Most Popular</span>
+                        </div>
+                        <div class="product-card__image">
+                            <img src="skillfolio.png" alt="Skillfolio portfolio builder interface" loading="lazy">
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__meta">
+                                <span class="product-card__category">Web Platform</span>
+                                <span class="product-card__status product-card__status--live">Live</span>
+                            </div>
+                            <h3 class="product-card__title">Skillfolio</h3>
+                            <p class="product-card__description">A digital portfolio builder helping students,
+                                freelancers & job seekers showcase their skills with beautiful, customizable templates.
+                                Stand out to recruiters with a professional online presence.</p>
+                            <ul class="product-card__features">
+                                <li>Drag-and-drop portfolio builder</li>
+                                <li>Integration with LinkedIn & GitHub</li>
+                                <li>Real-time analytics dashboard</li>
+                                <li>Custom domain & SEO tools</li>
+                                <li>Export as PDF or live website</li>
+                            </ul>
+                            <div class="product-card__stats">
+                                <div class="product-stat">
+                                    <span class="product-stat__number">1k+</span>
+                                    <span class="product-stat__label">Active Users</span>
+                                </div>
+                                <div class="product-stat">
+                                    <span class="product-stat__number">4.5</span>
+                                    <span class="product-stat__label">User Rating</span>
+                                </div>
+                                <div class="product-stat">
+                                    <span class="product-stat__number">2025</span>
+                                    <span class="product-stat__label">Launched</span>
+                                </div>
+                            </div>
+                            <div class="product-card__actions">
+                                <a href="https://skillfolio.tech" class="btn btn--primary" target="_blank"
+                                    rel="noopener">Visit Website</a>
+                                <a href="https://skillfolio.tech/about.html" class="btn btn--secondary" target="_blank"
+                                    rel="noopener">Case Study</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section products-section--alt" id="pending-web" aria-labelledby="pending-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">Upcoming Innovation</span>
+                    <h2 id="pending-heading" class="section-header__title">Digital Bhagwad Gita</h2>
+                    <p class="section-header__subtitle">New product in development — designed to redefine productivity
+                    </p>
+                </div>
+                <div class="products-grid fade">
+                    <article class="product-card tilt">
+                        <div class="product-card__image">
+                            <img src="bagvadgita.png" alt="Digital Bhagwad Gita platform concept" loading="lazy">
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__meta">
+                                <span class="product-card__category">Web Platform</span>
+                                <span class="product-card__status product-card__status--pending">Pending Release</span>
+                            </div>
+                            <h3 class="product-card__title">Digital Bhagwad Gita</h3>
+                            <p class="product-card__description">A modern digital platform for exploring and
+                                understanding the teachings of the Bhagwad Gita.</p>
+                            <ul class="product-card__features">
+                                <li>Verse-by-verse Bhagavad Gita with simple explanations</li>
+                                <li>Audio recitations for guided listening experience</li>
+                                <li>Multi-language support (Hindi, English, Sanskrit)</li>
+                                <li>Daily shloka notifications for spiritual consistency</li>
+                                <li>Bookmark and save favorite verses</li>
+                                <li>Interactive meaning with real-life application insights</li>
+                                <li>Search any shloka instantly by keyword or chapter</li>
+                                <li>Chapter-wise structured learning navigation</li>
+                                <li>Offline reading access for uninterrupted study</li>
+                                <li>Progress tracking for completed chapters</li>
+                            </ul>
+                            <div class="product-card__notice">
+                                <p>🚀 Development in progress — expected launch DEC 2026. Join the waitlist to get early
+                                    access.</p>
+                            </div>
+                            <div class="product-card__actions">
+                                <a href="https://divinecodestechnology.netlify.app/" class="btn btn--primary"
+                                    style="background: var(--accent); box-shadow: 0 4px 12px rgba(249,115,22,0.4);">Register
+                                    To Contribute →</a>
+                                <a href="https://youtu.be/6eXTYmr0Zk8?si=zWMtc1oEv7N66yq6" class="btn btn--outline">View
+                                    Teaser</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section fade">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta__content">
+                        <h2 class="cta__title">Shape the Future With Us</h2>
+                        <p class="cta__text">We believe in building products that matter. Whether you're a user,
+                            partner, or investor — let's create something remarkable together.</p>
+                        <ul class="cta__list">
+                            <li>Strategic technology partnerships</li>
+                            <li>Early adopter & beta testing programs</li>
+                            <li>Investment & collaboration opportunities</li>
+                            <li>Feedback-driven product evolution</li>
+                        </ul>
+                    </div>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--cta">Partner With Us</a>
+                        <a href="mailto:divinecodestech@gmail.com" class="btn btn--secondary"
+                            style="background: transparent; border-color: white; color: white;">Email Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div>
+                    <a href="index.html" class="logo">
+                        <span class="logo__text" style="color:white; background: none;">Divinecode</span>
+                        <span class="logo__tagline" style="color:#94a3b8;">Technology</span>
+                    </a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.7);">Building our own
+                        digital future, one product at a time.</p>
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/in/divinecodes-technology/" class="footer__social-link"
+                            target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-10h3v1.604c1.396-2.586 7-2.777 7 2.476v5.92z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/divinecodetechnology" class="footer__social-link"
+                            target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.848 0 3.204-.012 3.584-.07 4.85-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.85-.07-3.26-.148-4.771-1.699-4.919-4.919-.058-1.266-.069-1.645-.069-4.85 0-3.204.012-3.584.07-4.85.148-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0 1.838c-3.156 0-3.524.012-4.765.069-2.686.123-3.946 1.386-4.069 4.069-.057 1.241-.069 1.609-.069 4.765 0 3.156.012 3.524.069 4.765.123 2.683 1.383 3.946 4.069 4.069 1.241.057 1.609.069 4.765.069 3.156 0 3.524-.012 4.765-.069 2.683-.123 3.946-1.383 4.069-4.069.057-1.241.069-1.609.069-4.765 0-3.156-.012-3.524-.069-4.765-.123-2.683-1.383-3.946-4.069-4.069-1.241-.057-1.609-.069-4.765-.069zm0 4.838a5.162 5.162 0 110 10.324 5.162 5.162 0 010-10.324zm0 1.838a3.324 3.324 0 100 6.648 3.324 3.324 0 000-6.648zm6.406-2.845a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <div>
+                        <h4 style="color: white;">Products</h4>
+                        <ul style="list-style:none; margin-top:1rem;">
+                            <li><a href="https://skillfolio.tech" class="footer__link" target="_blank">SkillFolio</a>
+                            </li>
+                            <li><a href="https://divinecodestechnology.netlify.app/" class="footer__link">Digital
+                                    Bhagwad Gita</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: white;">Company</h4>
+                        <ul style="list-style:none; margin-top:1rem;">
+                            <li><a href="about.html" class="footer__link">About Us</a></li>
+                            <li><a href="contact.html" class="footer__link">Contact</a></li>
+                            <li><a href="products.html" class="footer__link">Products</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: white;">Legal</h4>
+                        <ul style="list-style:none; margin-top:1rem;">
+                            <li><a href="privacy.html" class="footer__link">Privacy</a></li>
+                            <li><a href="terms.html" class="footer__link">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 2rem; text-align: center; font-size: 0.8rem;">
+                © 2025 Divinecode Technology — All Rights Reserved. Shaping the digital frontier.
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+</body>
+
+</html>

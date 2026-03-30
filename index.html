@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Divinecode Technology | Building Our Digital Future</title>
+    <meta name="description"
+        content="A product-studio creating Websites, Apps & Games — all launched by us. Experience innovation at Divinecode.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="Divinecodetechnology.ico">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Divinecode Technology">
+    <meta property="og:title" content="Divinecode Technology">
+    <meta property="og:description" content="Building our digital future with websites, apps & games.">
+    <meta property="og:type" content="website">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <span class="logo__text">Divinecode</span>
+                    <span class="logo__tagline">Technology</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+                        <li><a href="products.html" class="nav__link">Products</a></li>
+                        <li><a href="about.html" class="nav__link">About</a></li>
+                        <li><a href="contact.html" class="nav__link btn btn--primary"
+                                style="padding: 0.5rem 1.2rem;">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav__list">
+            <li><a href="index.html" class="mobile-nav__link mobile-nav__link--active">Home</a></li>
+            <li><a href="products.html" class="mobile-nav__link">Products</a></li>
+            <li><a href="about.html" class="mobile-nav__link">About</a></li>
+            <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem;">
+            <a href="contact.html" class="btn btn--primary mobile-nav__btn"
+                style="width: 100%; justify-content: center;">Get in Touch →</a>
+        </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <main>
+        <section class="hero">
+            <div class="blur-bg"></div>
+            <div class="blur-bg blur-bg-2"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <span class="hero__badge">✨ Since 2025 — Product Studio</span>
+                    <h1 class="hero__headline">We Build <span class="gradient-text">Our Own</span><br>Digital Future.
+                    </h1>
+                    <p class="hero__tagline">A product-studio creating Websites, Apps & Games — all launched by us.
+                        Innovation without limits.</p>
+                    <div class="hero__actions">
+                        <a href="#featured" class="btn btn--primary">Explore Universe →</a>
+                        <a href="products.html" class="btn btn--outline">Latest Project</a>
+                    </div>
+                </div>
+                <div class="scroll-indicator" id="scrollIndicator">▼</div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="features fade" id="products">
+                <div class="section-header">
+                    <h2 class="section-header__title">What We Create</h2>
+                    <p style="color: var(--gray);">Digital experiences that redefine possibilities</p>
+                </div>
+                <div class="features__grid">
+                    <div class="card">
+                        <div class="card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                            </svg></div>
+                        <h3>Web Platforms</h3>
+                        <p style="color:var(--gray)">Full-stack digital platforms with performance & scalability at
+                            core.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor">
+                                <rect x="5" y="2" width="14" height="20" rx="2" />
+                                <line x1="12" y1="18" x2="12" y2="18" />
+                            </svg></div>
+                        <h3>Mobile Apps</h3>
+                        <p style="color:var(--gray)">Fast, minimal & powerful tools for iOS & Android, built with love.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                <polyline points="2 17 12 22 22 17" />
+                            </svg></div>
+                        <h3>Immersive Games</h3>
+                        <p style="color:var(--gray)">Addictive gameplay & modern mechanics across multiple genres.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured fade" id="featured">
+                <div class="featured__inner">
+                    <div><span class="hero__badge"
+                            style="margin-bottom:0.5rem; background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(139,92,246,0.1)); animation: badgePulse 1.8s infinite;">⭐
+                            Featured Product</span>
+                        <h2 style="font-size:2.5rem;">Skillfolio</h2>
+                        <p style="color:var(--gray); margin:1rem 0;">Digital portfolio platform helping students & job
+                            seekers showcase skills effectively.</p>
+                        <div class="skillfolio-progress">
+                            <div class="progress-label"><span>Platform Maturity</span><span
+                                    style="color:var(--primary); font-weight:700;">92%</span></div>
+                            <div class="progress-bar-container">
+                                <div class="progress-fill-skill"></div>
+                            </div>
+                        </div>
+                        <ul class="featured__points">
+                            <li>Create stunning digital portfolios in minutes</li>
+                            <li>Integration with LinkedIn and GitHub</li>
+                            <li>Analytics to track portfolio views</li>
+                            <li>Custom domains and branding</li>
+                        </ul>
+                        <div class="stats-row"><span class="stat-chip">📊 1K+ Active Users</span><span
+                                class="stat-chip">⭐ 4.5 Rating</span><span class="stat-chip">🚀 Live Now</span></div>
+                        <div style="display:flex; gap:1rem; margin-top:2rem;"><a href="https://skillfolio.tech"
+                                class="btn btn--primary">Launch Skillfolio →</a><a
+                                href="https://skillfolio.tech/about.html" class="btn btn--outline">Learn more</a></div>
+                    </div>
+                    <div class="featured__image-container"><img src="skillfolio.png" alt="Skillfolio Preview"
+                            style="width:100%; display:block;"></div>
+                </div>
+            </section>
+
+            <section class="pending-project fade" id="pending">
+                <div class="section-header">
+                    <h2 class="section-header__title">⚡ Pending Project</h2>
+                    <p>Next big thing — currently in active development</p>
+                </div>
+                <div class="project-showcase">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap;">
+                        <div style="flex:2; min-width:250px;"><span class="project-badge">🔥 ACTIVE DEVELOPMENT</span>
+                            <h2 class="project-title">DIGITAL BHAGWAD GITA</h2>
+                            <p style="color:#334155; font-size:1.1rem;">A modern digital interpretation of the ancient
+                                wisdom, making it accessible and relevant for today's audience.</p>
+                            <div class="project-progress">
+                                <div style="display:flex; justify-content:space-between;"><span>Development
+                                        Progress</span><span style="color:#f97316;">12%</span></div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-fill"
+                                        style="width:12%; background: linear-gradient(90deg, #f97316, #fb923c);"></div>
+                                </div>
+                            </div><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3 Animations</span><span
+                                class="tech-tag">JavaScript</span><span class="tech-tag">GSAP</span>
+                            <div style="margin-top:2rem;"><a href="https://divinecodestechnology.netlify.app/"
+                                    class="btn btn--primary" style="background:#f97316;">Register To Contribute →</a><a
+                                    href="https://youtu.be/6eXTYmr0Zk8?si=zWMtc1oEv7N66yq6" class="btn btn--outline"
+                                    style="margin-left:0.8rem;">View Teaser</a></div>
+                        </div>
+                        <div style="flex:1; min-width:200px; margin-top:1rem;">
+                            <div
+                                style="background:white; border-radius:1.5rem; padding:1rem; text-align:center; box-shadow:var(--shadow-md);">
+                                <div style="font-size:3rem;">🚀</div>
+                                <p style="font-weight:700;">Launch Timeline</p>
+                                <p style="font-size:0.85rem; color:#f97316;">Estimated Release</p>
+                                <p style="font-size:1.4rem; font-weight:800;">DEC 2026</p>
+                                <div style="background:#fef3c7; border-radius:1rem; padding:0.5rem;"><span>🔥 12%
+                                        complete</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team fade" id="team">
+                <div class="section-header">
+                    <h2 class="section-header__title">✨ Behind the Magic</h2>
+                    <p>Visionary leadership driving innovation</p>
+                </div>
+                <div class="team__grid">
+                    <div class="team-card">
+                        <div class="team-card__image"><img src="GouravRajSinghPanwar.jpg" alt="GouravRaj Singh Panwar"
+                                class="avatar-svg">
+                            <div class="team-card__overlay"><a href="https://in.linkedin.com/in/gouravraj-singh-panwar"
+                                    class="team-card__social" target="_blank"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-10h3v1.604c1.396-2.586 7-2.777 7 2.476v5.92z" />
+                                    </svg></a><a href="https://www.instagram.com/itz_gouravpanwar"
+                                    class="team-card__social" target="_blank"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.848 0 3.204-.012 3.584-.07 4.85-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.85-.07-3.26-.148-4.771-1.699-4.919-4.919-.058-1.266-.069-1.645-.069-4.85 0-3.204.012-3.584.07-4.85.148-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0 1.838c-3.156 0-3.524.012-4.765.069-2.686.123-3.946 1.386-4.069 4.069-.057 1.241-.069 1.609-.069 4.765 0 3.156.012 3.524.069 4.765.123 2.683 1.383 3.946 4.069 4.069 1.241.057 1.609.069 4.765.069 3.156 0 3.524-.012 4.765-.069 2.683-.123 3.946-1.383 4.069-4.069.057-1.241.069-1.609.069-4.765 0-3.156-.012-3.524-.069-4.765-.123-2.683-1.383-3.946-4.069-4.069-1.241-.057-1.609-.069-4.765-.069zm0 4.838a5.162 5.162 0 110 10.324 5.162 5.162 0 010-10.324zm0 1.838a3.324 3.324 0 100 6.648 3.324 3.324 0 000-6.648zm6.406-2.845a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" />
+                                    </svg></a><a href="https://devgourav.me" class="team-card__social"
+                                    target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M10 2h4a2 2 0 012 2v2h4a2 2 0 012 2v10a2 2 0 01-2 2h-16a2 2 0 01-2-2v-10a2 2 0 012-2h4v-2a2 2 0 012-2zm4 4v-2h-4v2h4z" />
+                                    </svg></a></div>
+                        </div>
+                        <div class="team-card__content">
+                            <h3>GouravRaj Singh Panwar</h3>
+                            <p style="color:var(--primary); font-weight:600;">Founder & CEO</p>
+                            <p>Digital pioneer leading Divinecode’s product vision and innovation culture to build
+                                powerful next-generation web platforms.</p>
+                            <div class="founder-badge">✦ Founder's Vision</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section fade" id="contact">
+                <div class="cta">
+                    <h2 class="cta__title">Ready to Build Something Amazing?</h2>
+                    <p style="opacity:0.9; max-width:600px; margin:1rem auto;">Collaborate with us or explore our
+                        products — let's shape the digital era together.</p>
+                    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem;"><a
+                            href="contact.html" class="btn btn--primary" style="background:white; color:#0f172a;">Get in
+                            Touch →</a><a href="products.html" class="btn btn--outline"
+                            style="border-color:white; color:white;">View All Products</a></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div><a href="#" class="logo"><span class="logo__text"
+                            style="color:white; background:none;">Divinecode</span><span class="logo__tagline"
+                            style="color:#94a3b8;">Technology</span></a>
+                    <p style="margin-top:1rem;">Building our own digital future, one product at a time.</p>
+                    <div class="footer__social" style="display:flex; gap:1rem; margin-top:1.5rem;"><a
+                            href="https://www.linkedin.com/in/divinecodes-technology/" class="footer__social-link"
+                            target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-10h3v1.604c1.396-2.586 7-2.777 7 2.476v5.92z" />
+                            </svg></a><a href="https://www.instagram.com/divinecodetechnology"
+                            class="footer__social-link" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.848 0 3.204-.012 3.584-.07 4.85-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.85-.07-3.26-.148-4.771-1.699-4.919-4.919-.058-1.266-.069-1.645-.069-4.85 0-3.204.012-3.584.07-4.85.148-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0 1.838c-3.156 0-3.524.012-4.765.069-2.686.123-3.946 1.386-4.069 4.069-.057 1.241-.069 1.609-.069 4.765 0 3.156.012 3.524.069 4.765.123 2.683 1.383 3.946 4.069 4.069 1.241.057 1.609.069 4.765.069 3.156 0 3.524-.012 4.765-.069 2.683-.123 3.946-1.383 4.069-4.069.057-1.241.069-1.609.069-4.765 0-3.156-.012-3.524-.069-4.765-.123-2.683-1.383-3.946-4.069-4.069-1.241-.057-1.609-.069-4.765-.069zm0 4.838a5.162 5.162 0 110 10.324 5.162 5.162 0 010-10.324zm0 1.838a3.324 3.324 0 100 6.648 3.324 3.324 0 000-6.648zm6.406-2.845a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" />
+                            </svg></a></div>
+                </div>
+                <div class="footer__links">
+                    <div>
+                        <h4>Products</h4>
+                        <ul style="list-style:none; margin-top:1rem;">
+                            <li><a href="https://skillfolio.tech" class="footer__link" target="_blank">SkillFolio</a>
+                            </li>
+                            <li><a href="https://divinecodestechnology.netlify.app/" class="footer__link">Digital
+                                    Bhagwad Gita</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Company</h4>
+                        <ul style="list-style:none; margin-top:1rem;">
+                            <li><a href="about.html" class="footer__link">About Us</a></li>
+                            <li><a href="contact.html" class="footer__link">Contact</a></li>
+                            <li><a href="products.html" class="footer__link">Products</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Legal</h4>
+                        <ul style="list-style:none; margin-top:1rem;">
+                            <li><a href="privacy.html" class="footer__link">Privacy</a></li>
+                            <li><a href="terms.html" class="footer__link">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="border-top:1px solid rgba(255,255,255,0.1); margin-top:3rem; padding-top:2rem; text-align:center;">
+                © 2025 Divinecode Technology — All Rights Reserved. Shaping the digital frontier.</div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
