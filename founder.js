@@ -281,7 +281,7 @@ if (slides.length > 0) {
 
     }
 
-    setInterval(changeSlide, 15000);
+    setInterval(changeSlide, 10000);
 
 }
 
