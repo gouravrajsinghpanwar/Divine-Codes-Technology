@@ -316,5 +316,41 @@ window.addEventListener("scroll", () => {
         `translateY(-${scrollY * 0.08}px)`;
 
     }
+// =========================
+// HERO IMAGE AUTO SLIDER
+// =========================
 
+const slides = document.querySelectorAll(".slide");
+
+if(slides.length > 0){
+
+    let currentSlide = 0;
+
+    function changeSlide(){
+
+        slides[currentSlide].classList.remove("active");
+        slides[currentSlide].classList.add("prev");
+
+        currentSlide++;
+
+        if(currentSlide >= slides.length){
+            currentSlide = 0;
+        }
+
+        slides.forEach((slide,index)=>{
+
+            if(index !== currentSlide){
+                slide.classList.remove("active");
+            }
+
+        });
+
+        slides[currentSlide].classList.remove("prev");
+        slides[currentSlide].classList.add("active");
+
+    }
+
+    setInterval(changeSlide,15000);
+
+}
 });
