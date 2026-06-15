@@ -780,6 +780,28 @@
             flex-wrap: wrap;
             gap: 8px;
         }
+.team-card__action {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.team-card__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--primary-color, #2563eb);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.team-card__btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
 
         .expertise-tag {
             display: inline-block;
