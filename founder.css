@@ -1,94 +1,118 @@
-/* =========================
-   FOUNDER PAGE STYLES
-========================= */
-
-#about-founder{
-    padding:6rem 0;
+.founder {
+    padding: 6rem 0;
 }
 
-.founder-layout{
-    display:grid;
-    grid-template-columns:420px 1fr;
-    gap:4rem;
-    align-items:center;
+.founder__wrapper {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 5rem;
+    align-items: center;
 }
 
-.founder-image{
-    position:relative;
+.founder__image {
+    position: relative;
 }
 
-.founder-image img{
-    width:100%;
-    border-radius:2rem;
-    object-fit:cover;
-    box-shadow:var(--shadow-lg);
+.founder__image img {
+    width: 100%;
+    border-radius: 2rem;
+    display: block;
+    box-shadow: var(--shadow-lg);
 }
 
-.founder-image::before{
-    content:'';
-    position:absolute;
-    inset:-15px;
-    background:linear-gradient(
+.founder__image::before {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    border-radius: 2.5rem;
+    background: linear-gradient(
         135deg,
-        rgba(99,102,241,.15),
+        rgba(99,102,241,.12),
         rgba(139,92,246,.08)
     );
-    border-radius:2.5rem;
-    z-index:-1;
+    z-index: -1;
 }
 
-.founder-content h2{
-    font-size:3rem;
-    font-weight:800;
-    letter-spacing:-0.03em;
-    margin-bottom:1rem;
+.founder__content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: .5rem;
 }
 
-.founder-content .role{
-    color:var(--primary);
-    font-size:1.1rem;
-    font-weight:600;
-    margin-bottom:1.5rem;
+.founder__role {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
-.founder-content p{
-    color:var(--gray);
-    margin-bottom:1.25rem;
-    font-size:1.05rem;
-    line-height:1.8;
+.founder__content p {
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1rem;
 }
 
-.founder-tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:.75rem;
-    margin-top:2rem;
+.founder__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 2rem;
 }
 
-.founder-tag{
-    padding:.55rem 1rem;
-    border-radius:2rem;
-    background:white;
-    color:var(--primary);
-    font-size:.85rem;
-    font-weight:600;
-    box-shadow:var(--shadow-sm);
-    transition:var(--transition);
+.founder__skill {
+    background: white;
+    color: var(--primary);
+    padding: .6rem 1rem;
+    border-radius: 999px;
+    font-size: .85rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
 }
 
-.founder-tag:hover{
-    background:var(--primary);
-    color:white;
+.founder__socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-/* =========================
-   STATS
-========================= */
-
-.founder-stats{
-    padding:5rem 0;
+.founder__socials a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
 }
 
+.founder__socials a:hover {
+    transform: translateY(-4px);
+    background: var(--primary);
+    color: white;
+}
+
+@media(max-width:900px){
+
+    .founder__wrapper{
+        grid-template-columns:1fr;
+        gap:3rem;
+    }
+
+    .founder__content{
+        text-align:center;
+    }
+
+    .founder__skills,
+    .founder__socials{
+        justify-content:center;
+    }
+
+}
 .stats-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -97,7 +121,7 @@
 
 .stat-card{
     background:white;
-    border-radius:var(--radius-xl);
+    border-radius:1.5rem;
     padding:2rem;
     text-align:center;
     box-shadow:var(--shadow-sm);
@@ -110,262 +134,19 @@
 }
 
 .stat-number{
-    font-size:2.5rem;
+    font-size:3rem;
     font-weight:800;
-    color:var(--primary);
-}
-
-.stat-label{
-    color:var(--gray);
-    margin-top:.5rem;
-}
-
-/* =========================
-   TIMELINE
-========================= */
-
-.timeline{
-    padding:6rem 0;
-}
-
-.timeline-wrapper{
-    position:relative;
-    max-width:900px;
-    margin:auto;
-}
-
-.timeline-wrapper::before{
-    content:'';
-    position:absolute;
-    left:25px;
-    top:0;
-    width:3px;
-    height:100%;
-    background:linear-gradient(
-        var(--primary),
-        #c084fc
-    );
-}
-
-.timeline-item{
-    position:relative;
-    padding-left:80px;
-    margin-bottom:3rem;
-}
-
-.timeline-item::before{
-    content:'';
-    position:absolute;
-    left:13px;
-    top:8px;
-    width:26px;
-    height:26px;
-    border-radius:50%;
-    background:white;
-    border:5px solid var(--primary);
-}
-
-.timeline-card{
-    background:white;
-    border-radius:var(--radius-xl);
-    padding:2rem;
-    box-shadow:var(--shadow-sm);
-}
-
-.timeline-card h3{
-    margin-bottom:.75rem;
-}
-
-.timeline-card p{
-    color:var(--gray);
-}
-
-/* =========================
-   EXPERTISE
-========================= */
-
-.expertise-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:2rem;
-}
-
-.expertise-card{
-    background:white;
-    border-radius:var(--radius-xl);
-    padding:2rem;
-    text-align:center;
-    box-shadow:var(--shadow-sm);
-    transition:var(--transition);
-}
-
-.expertise-card:hover{
-    transform:translateY(-8px);
-}
-
-.expertise-icon{
-    width:70px;
-    height:70px;
-    margin:auto;
-    margin-bottom:1rem;
-    border-radius:1rem;
-    background:rgba(99,102,241,.08);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--primary);
-}
-
-/* =========================
-   VENTURES
-========================= */
-
-.ventures-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:2rem;
-}
-
-.venture-card{
-    background:white;
-    border-radius:var(--radius-xl);
-    padding:2rem;
-    box-shadow:var(--shadow-sm);
-    transition:var(--transition);
-}
-
-.venture-card:hover{
-    transform:translateY(-8px);
-}
-
-.venture-card h3{
-    font-size:1.5rem;
-    margin-bottom:1rem;
-    color:var(--primary);
-}
-
-.venture-card p{
-    color:var(--gray);
-}
-
-/* =========================
-   ACHIEVEMENTS
-========================= */
-
-.achievement-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:2rem;
-}
-
-.achievement-card{
-    background:white;
-    padding:2rem;
-    border-radius:var(--radius-xl);
-    box-shadow:var(--shadow-sm);
-    transition:var(--transition);
-}
-
-.achievement-card:hover{
-    transform:translateY(-8px);
-}
-
-.achievement-card h3{
-    color:var(--primary);
-    margin-bottom:1rem;
-}
-
-.achievement-card p{
-    color:var(--gray);
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-founder{
-    padding:6rem 0;
-}
-
-.contact-box{
     background:linear-gradient(
         135deg,
         var(--primary),
         #8b5cf6
     );
-    color:white;
-    text-align:center;
-    padding:4rem;
-    border-radius:var(--radius-2xl);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
 }
 
-.contact-box h2{
-    font-size:2.5rem;
-    margin-bottom:1rem;
-}
-
-.contact-box p{
-    max-width:650px;
-    margin:auto;
-    margin-bottom:2rem;
-    opacity:.9;
-}
-
-.contact-actions{
-    display:flex;
-    justify-content:center;
-    gap:1rem;
-    flex-wrap:wrap;
-}
-
-.contact-actions .btn{
-    background:white;
-    color:var(--primary);
-}
-
-.contact-actions .btn:hover{
-    transform:translateY(-4px);
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:992px){
-
-    .founder-layout{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .ventures-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:768px){
-
-    .founder-content h2{
-        font-size:2.2rem;
-    }
-
-    .stats-grid{
-        grid-template-columns:1fr;
-    }
-
-    .timeline-item{
-        padding-left:60px;
-    }
-
-    .contact-box{
-        padding:2.5rem;
-    }
-
-    .contact-box h2{
-        font-size:2rem;
-    }
+.stat-label{
+    color:var(--gray);
+    margin-top:.5rem;
 }
