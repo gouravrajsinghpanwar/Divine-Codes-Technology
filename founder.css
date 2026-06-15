@@ -479,4 +479,38 @@ nav ul{
     transform:translateX(-100%);
     z-index:1;
 }
+   .hero-image{
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 600px;
+    margin: auto;
+}
+
+.hero-slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 1s ease;
+}
+
+.slide.active{
+    opacity: 1;
+    visibility: visible;
+}
 }
